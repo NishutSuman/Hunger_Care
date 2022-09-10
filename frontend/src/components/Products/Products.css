@@ -1,0 +1,45 @@
+.link1{
+    text-decoration: none;
+    color: white;
+}
+
+.productsContainer{
+    box-sizing: border-box;
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    padding-left: 2rem;
+    margin: 2rem auto;
+    grid-gap: 3rem;
+}
+
+.pagination{
+    width: 30%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.pagination>button{
+    width: 120px;
+    margin: 40px;
+}
+
+.paginate{
+    text-align: center;
+    font-size: 18px;
+}
+
+.paginate>span{
+    width: 40px;
+    height: 20px;
+    background-color: #4a8db7;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
