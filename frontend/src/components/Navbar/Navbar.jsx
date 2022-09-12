@@ -50,7 +50,7 @@ export const Navbar = () => {
       </li>
       <li>
         <Link className="link" to="/login">
-          { isAuthorized? "🙍 User" : "LogIn"}
+          { isAuthorized? "🙍 Contributer" : "LogIn"}
         </Link>
       </li>
     </div>

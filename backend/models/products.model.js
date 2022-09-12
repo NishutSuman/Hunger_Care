@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const productSchema= new mongoose.Schema({
     rest_name: {type: String, required: true},
-    desc: {type: String, required: false},
+    desc: {type: String, required: true},
     image_url: {type: String, required: true},
     rating: {type: Number, required: true},
     price: {type: Number, required: true},

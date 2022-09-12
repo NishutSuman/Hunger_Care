@@ -29,8 +29,9 @@ rating:"",
 
     const submitHandler=(e)=>{
         e.preventDefault();
-        axios.post(`http://am-hungry.herokuapp.com/products`,formData);
+        axios.post(`https://am-hungry.herokuapp.com/products`,formData);
         setFormData({rest_name:"",
+        desc:"",
         image_url:"",
         price:"",
         cost_for_two:"",
@@ -55,6 +56,10 @@ rating:"",
             <input type="text" name="rest_name" value={formData.rest_name} onChange={hanldeChange} placeholder='Enter Reastaurant name...' required/>
         </div>
         <div>
+            <label htmlFor="">Dish Type : </label>
+            <input type="text" name="desc" value={formData.desc} onChange={hanldeChange} placeholder='American/ South Indian/ North Indian...' required/>
+        </div>
+        <div>
             <label htmlFor="">Image Url: </label>
             <input type="url" name="image_url" value={formData.image_url} onChange={hanldeChange} placeholder='Enter image url...' required/>
         </div>
@@ -72,7 +77,7 @@ rating:"",
         </div>
         <div>
             <label htmlFor="">Food Category :</label>
-            <input type="text" name="category" value={formData.category} onChange={hanldeChange} placeholder='veg or nonveg...' required/>
+            <input type="text" name="category" value={formData.category} onChange={hanldeChange} placeholder='veg or nonveg (small letter)...' required/>
         </div>
         <div>
             <label htmlFor="">Rating :</label>
